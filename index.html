@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>解盛 · 简历</title>
+<meta name="author" content="解盛">
+<meta name="description" content="计算机/软件工程博士，深耕跨模态检索（VLM/RAG）与 LLM Agent Harness，发表论文 10 篇、授权专利 2 项，兼具 10 万+ 房源推荐落地与多端 Agent 工程组件研发经验。">
+<meta name="keywords" content="解盛, Agent 算法, LLM Agent Harness, 跨模态检索, VLM, RAG, 简历">
+<meta name="generator" content="Kami">
+<style>
+  /* W04 / regular face for body text */
+  @font-face {
+    font-family: "TsangerJinKai02";
+    src: url("fonts/TsangerJinKai02-W04.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* W05 / medium face for headings (no synthetic bold) */
+  @font-face {
+    font-family: "TsangerJinKai02";
+    src: url("fonts/TsangerJinKai02-W05.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @page {
+    size: A4;
+    margin: 9.5mm 12.5mm 9.5mm 12.5mm;
+    background: #f5f4ed;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --parchment: #f5f4ed;
+    --ivory:     #faf9f5;
+    --border:    #e8e6dc;
+    --border-soft: #e5e3d8;
+    --near-black: #141413;
+    --dark-warm: #3d3d3a;
+    --olive:     #504e49;
+    --stone:     #6b6a64;
+    --brand:     #1B365D;
+    --brand-tint: #EEF2F7;
+    --serif: "TsangerJinKai02", "Source Han Serif SC", "Source Han Serif CN", "Noto Serif CJK SC", "Noto Serif SC", "Songti SC", "STSong", "SimSun", Georgia, serif;
+    --sans: var(--serif);
+  }
+
+  html, body { background: var(--parchment); }
+
+  @media screen {
+    body { max-width: 210mm; margin: 0 auto; padding: 9.5mm 12.5mm; }
+  }
+
+  body {
+    color: var(--near-black);
+    font-family: var(--serif);
+    font-size: 9pt;
+    line-height: 1.34;
+    letter-spacing: 0.16pt;
+    widows: 3;
+    orphans: 3;
+  }
+
+  .serif {
+    font-family: var(--serif);
+  }
+
+  a { color: var(--brand); text-decoration: none; }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2mm;
+    padding-bottom: 1.3mm;
+    border-bottom: 0.6pt solid var(--border);
+  }
+  .header > div:first-child { flex-shrink: 0; }
+  .name {
+    font-family: var(--serif);
+    font-size: 22pt;
+    font-weight: 500;
+    letter-spacing: 0.5pt;
+    color: var(--near-black);
+    line-height: 1;
+    margin-bottom: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 2mm;
+    white-space: nowrap;
+  }
+  .alias {
+    font-size: 11pt;
+    font-weight: 400;
+    color: var(--stone);
+    letter-spacing: 0.2pt;
+  }
+  .contact {
+    text-align: right;
+    font-size: 9pt;
+    color: var(--stone);
+    line-height: 1.38;
+    margin-bottom: -0.3mm;
+  }
+  .contact a { color: var(--dark-warm); }
+  .contact .role { color: var(--brand); font-size: 10pt; font-weight: 500; }
+  .contact .sep { color: var(--border); margin: 0 0.4em; }
+
+  /* METRICS */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 5mm;
+    margin-bottom: 1.6mm;
+  }
+  .metric {
+    background: transparent;
+    padding: 0.3mm 0 0.5mm;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4mm;
+    min-width: 0;
+    break-inside: avoid;
+  }
+  .metric-value {
+    font-family: var(--serif);
+    font-size: 12pt;
+    font-weight: 500;
+    color: var(--brand);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .metric-label {
+    font-size: 9pt;
+    color: var(--olive);
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .metric-value .unit {
+    font-size: 9.5pt;
+    margin-left: 0.3mm;
+    font-weight: 500;
+    color: var(--brand);
+  }
+
+  /* SECTION */
+  .section-title {
+    font-family: var(--serif);
+    font-size: 10.8pt;
+    font-weight: 500;
+    color: var(--near-black);
+    border-bottom: 0.5pt solid var(--border);
+    padding: 0 0 0.45mm 0;
+    margin: 2.4mm 0 0.8mm 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2mm;
+  }
+  .section-title .sub {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 9pt;
+    color: var(--stone);
+    letter-spacing: 0.16pt;
+  }
+
+  section:first-of-type .section-title { margin-top: 0; }
+
+  .section-title + .skill-row { padding-top: 0.55mm; }
+  .section-title + .edu-row { padding-top: 0.55mm; }
+
+  /* SUMMARY */
+  .summary {
+    font-size: 9pt;
+    line-height: 1.34;
+    letter-spacing: 0.16pt;
+    color: var(--near-black);
+  }
+  .summary .hl { color: var(--brand); }
+
+  /* PROJECTS */
+  .project {
+    padding: 0.9mm 0;
+    break-inside: avoid;
+  }
+  .project:first-of-type { padding-top: 0.4mm; }
+  .proj-head {
+    display: block;
+    margin-bottom: 0.3mm;
+  }
+  .proj-name {
+    font-family: var(--serif);
+    font-size: 10pt;
+    font-weight: 500;
+    color: var(--near-black);
+  }
+  .proj-kind {
+    font-size: 9.4pt;
+    color: var(--olive);
+    margin-left: 1.2mm;
+  }
+  .proj-role {
+    font-size: 9pt;
+    color: var(--brand);
+    font-weight: 500;
+    float: right;
+    background: #EEF2F7;
+    padding: 0.15mm 1.1mm;
+    border-radius: 2pt;
+    letter-spacing: 0.05pt;
+    white-space: nowrap;
+  }
+  .proj-lines { display: table; width: 100%; }
+  .proj-row { display: table-row; }
+  .proj-label {
+    display: table-cell;
+    width: 9.8mm;
+    font-size: 9pt;
+    color: var(--brand);
+    font-weight: 500;
+    letter-spacing: 0.16pt;
+    padding: 0.08mm 0 0.16mm 0;
+    vertical-align: top;
+  }
+  .proj-text {
+    display: table-cell;
+    font-size: 9pt;
+    color: var(--near-black);
+    line-height: 1.33;
+    letter-spacing: 0.16pt;
+    padding: 0 0 0.16mm 0.4mm;
+  }
+  .proj-text .hl { color: var(--brand); }
+
+  /* CONVICTIONS / TRAITS */
+  .convictions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.8mm;
+    margin-top: 0.45mm;
+  }
+  .conv-card {
+    background: transparent;
+    padding: 0 0.8mm 0 0;
+    break-inside: avoid;
+  }
+  .conv-head {
+    font-family: var(--serif);
+    font-size: 9.5pt;
+    font-weight: 500;
+    color: var(--near-black);
+    margin-bottom: 0.25mm;
+  }
+  .conv-body {
+    font-size: 9pt;
+    color: var(--olive);
+    line-height: 1.33;
+    letter-spacing: 0.16pt;
+  }
+  .conv-body .hl { color: var(--brand); }
+
+  /* SKILLS & COMPACT LIST ROWS */
+  .skill-row {
+    display: flex;
+    gap: 2mm;
+    padding: 0.5mm 0;
+    border-bottom: 0.3pt dotted var(--border);
+    align-items: baseline;
+  }
+  .skill-row:last-of-type { border-bottom: none; }
+  .skill-label {
+    font-size: 9pt;
+    font-weight: 500;
+    color: var(--brand);
+    letter-spacing: 0.16pt;
+    width: 21mm;
+    flex-shrink: 0;
+    line-height: 1.33;
+    white-space: nowrap;
+  }
+  .skill-body {
+    font-size: 9pt;
+    color: var(--near-black);
+    line-height: 1.33;
+    letter-spacing: 0.16pt;
+    flex: 1;
+  }
+  .skill-body .em-brand { color: var(--brand); }
+
+  .no-break { break-inside: avoid; }
+
+  /* EDUCATION */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 9pt;
+    padding: 0.45mm 0;
+  }
+  .edu-row .school {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 9.6pt;
+  }
+  .edu-row .major { color: var(--olive); font-size: 9pt; }
+  .edu-row .date {
+    color: var(--stone);
+    font-variant-numeric: tabular-nums;
+    font-size: 9pt;
+    white-space: nowrap;
+  }
+
+  /* 移动端：单列、放大字号，A4 版式保持不变 */
+  @media screen and (max-width: 640px) {
+    body { padding: 7mm 5mm; font-size: 10.5pt; }
+    .header { flex-direction: column; align-items: flex-start; gap: 2mm; }
+    .contact { text-align: left; margin-bottom: 0; }
+    .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2.4mm; }
+    .convictions { grid-template-columns: 1fr; gap: 2mm; }
+    .proj-role { float: none; display: inline-block; margin-left: 1.5mm; }
+    .summary, .proj-text, .conv-body, .skill-body { font-size: 10.5pt; line-height: 1.5; }
+    .section-title { font-size: 12pt; margin: 4mm 0 1.5mm; }
+    .name { font-size: 24pt; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="name serif">解盛<span class="alias">Xie Sheng</span></div>
+  </div>
+  <div class="contact">
+    <span class="role">Agent 算法与开发</span>
+    <br>
+    <a href="https://github.com/kaixinjiuxing666">GitHub @kaixinjiuxing666</a>
+    <span class="sep">·</span>
+    <a href="tel:18593273589">18593273589</a>
+    <span class="sep">·</span>
+    <a href="mailto:xs3589@outlook.com">xs3589@outlook.com</a>
+  </div>
+</div>
+
+<div class="metrics">
+  <div class="metric"><span class="metric-value serif">9<span class="unit">年</span></span><span class="metric-label">AI 算法研究与工程实践</span></div>
+  <div class="metric"><span class="metric-value serif">10<span class="unit">万+</span></span><span class="metric-label">房源智能推荐规模落地</span></div>
+  <div class="metric"><span class="metric-value serif">10<span class="unit">篇</span></span><span class="metric-label">学术论文</span></div>
+  <div class="metric"><span class="metric-value serif">28<span class="unit">个</span></span><span class="metric-label">Agent Harness 开源单元</span></div>
+</div>
+
+<section>
+  <div class="section-title">个人简介</div>
+  <div class="summary">
+    计算机/软件工程博士，深耕跨模态检索（VLM/RAG）、<span class="hl">LLM Agent Harness</span> 与 RSI，发表论文 10 篇（CCF-A 1 篇、SCI 一区 7 篇、一作 4 篇）与授权专利 2 项；兼具 <span class="hl">10 万+ 房源</span>推荐及 2D-to-3D 落地经验，专注以 Builder 视角将前沿研究转化为 0 到 1 工程闭环。
+  </div>
+</section>
+
+<section>
+  <div class="section-title">Agent 核心项目<span class="sub">2026 · 评测 · 基础设施 · 运行时组件</span></div>
+
+  <div class="project">
+    <div class="proj-head">
+      <span class="proj-name serif">中文多方言大模型偏见评测</span>
+      <span class="proj-kind">· The Unstandardized Penalty</span>
+      <span class="proj-role">第一作者</span>
+    </div>
+    <div class="proj-lines">
+      <div class="proj-row">
+        <div class="proj-label">背景</div>
+        <div class="proj-text">针对大模型在招聘、风控、审核等高风险决策中的书面方言偏见盲区，主导评测框架设计与全量实验。</div>
+      </div>
+      <div class="proj-row">
+        <div class="proj-label">方案</div>
+        <div class="proj-text">提出分配伤害、流程负担与安全误判三维框架，构建覆盖 7 种中文方言变体与 10 类场景的 7,770 条反事实对齐语料；对国内外 7 大模型家族 (GPT，Gemini，Deepseek，KIMI，GLM，Minimax，Qwen) 11 组配置完成 <span class="hl">85,470 次</span>评测及实验。</div>
+      </div>
+      <div class="proj-row">
+        <div class="proj-label">成果</div>
+        <div class="proj-text">揭示近普通话方言（中原/西南/东北）受损反重于粤语（百分制面试低 4.7-7.6 分、合规评论误杀率达普通话 2.1-3.7 倍）；证实偏见源于表层非规范性，预处理风格迁移可消除 <span class="hl">78%-91%</span> 偏见差距（身份提示仅 22%-39%）。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="proj-head">
+      <span class="proj-name serif"><a href="https://github.com/kaixinjiuxing666/pure-harness">pure-harness 及组件可视化</a></span>
+      <span class="proj-kind">· Python + Jupyter · MIT 开源</span>
+      <span class="proj-role">独立作者</span>
+    </div>
+    <div class="proj-lines">
+      <div class="proj-row">
+        <div class="proj-label">背景</div>
+        <div class="proj-text">将Agent Harness分别拆解为Execution，Tool，Context，Lifecycle，Observability，Verification，Governance可独立执行框架与可视化实验库。</div>
+      </div>
+      <div class="proj-row">
+        <div class="proj-label">方案</div>
+        <div class="proj-text">从零实现 <span class="hl">7 层 28 个</span>自包含 Notebook，涵盖沙箱回放、Tool/MCP 协议、上下文压缩、ReAct/多 Agent 编排、Trace 树、回归归因与注入防御；全程可视化上下文 Diff、工具决策与权限门控。</div>
+      </div>
+      <div class="proj-row">
+        <div class="proj-label">成果</div>
+        <div class="proj-text">真实 LLM API 驱动、无 GPU 秒级运行，把黑盒执行拆解为可观测单元，沉淀覆盖<span class="hl">成本-质量-速度权衡</span>的工程方法论。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="proj-head">
+      <span class="proj-name serif">Agent Harness 耗时预估与会话分叉组件</span>
+      <span class="proj-kind">· Claude Code / Codex / DeepSeek Harness</span>
+      <span class="proj-role">独立研发</span>
+    </div>
+    <div class="proj-lines">
+      <div class="proj-row">
+        <div class="proj-label">背景</div>
+        <div class="proj-text">面向长时程 Agent 工具耗时不可控与单线探索难回溯痛点，独立研发兼容多端 Harness 的运行时组件。</div>
+      </div>
+      <div class="proj-row">
+        <div class="proj-label">方案</div>
+        <div class="proj-text">接入类 <span class="hl">Jev 决策模型</span>，实时输入 Harness 已完成步骤与执行流程，动态预估单次 Tool-Call 耗时与全任务剩余时长进度条；同步研发会话分叉（Session Forking）支持任意节点上下文分叉回溯。</div>
+      </div>
+      <div class="proj-row">
+        <div class="proj-label">成果</div>
+        <div class="proj-text">打通 <span class="hl">Claude Code / Codex / DeepSeek</span> 多端适配，将黑盒长任务转化为单步耗时与全局剩余时长双维进度条。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">工作经历<span class="sub">2020 - 2021 · 湖南象盒网络科技有限公司（湖南最大房产平台）</span></div>
+
+  <div class="project">
+    <div class="proj-head">
+      <span class="proj-name serif">10 万+ 房源智能推荐引擎 &amp; 房屋 2D-to-3D 视觉建模</span>
+      <span class="proj-role">推荐负责人 · 算法工程师</span>
+    </div>
+    <div class="proj-lines">
+      <div class="proj-row">
+        <div class="proj-label">背景</div>
+        <div class="proj-text">担任湖南象盒（贝壳网竞品）个性化房源推荐负责人，并作为算法工程师参与房屋 2D-to-3D 视觉建模。</div>
+      </div>
+      <div class="proj-row">
+        <div class="proj-label">方案</div>
+        <div class="proj-text">搭建用户与 <span class="hl">10 万+ 房源</span>多维画像、召回-排序链路及离线评估到线上灰度迭代闭环；并参与户型结构解析与 2D-to-3D 几何重建，在精度与移动端渲染性能间做工程权衡。</div>
+      </div>
+      <div class="proj-row">
+        <div class="proj-label">成果</div>
+        <div class="proj-text">推荐引擎成为平台<span class="hl">核心流量分发入口</span>并沉淀迭代体系；三维看房上线，以结构化三维呈现缩短用户线上找房决策路径。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">科研成果<span class="sub">论文 10 篇（SCI 一区 7 篇 · CCF-A 1 篇 · 一作 4 篇）· 授权专利 2 项</span></div>
+  <div class="skill-row">
+    <div class="skill-label">一作顶刊</div>
+    <div class="skill-body">EAAI 2025、ESWA 2024（<span class="em-brand">SCI 一区</span>，CLIP跨模态检索/扩散模型人物一致性增强）；ICTAI 2019 会议（CNN稀疏注意力）</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">指导顶会刊</div>
+    <div class="skill-body">AAAI-23（<span class="em-brand">CCF-A</span>）、Information Fusion（IF=17.4）、TCSVT（IF=10.8）、EAAI、IPM 等 SCI 一区 5 篇</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">专利与基金</div>
+    <div class="skill-body">授权国家发明专利 2 项（CN110414338A / CN110569851A）；参与国家自然科学基金 2 项、主持研究生创新项目 1 项</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">核心能力</div>
+  <div class="skill-row">
+    <div class="skill-label">AI 工程研发</div>
+    <div class="skill-body">精通 Python / PyTorch 研发，善用 AI 实现<span class="em-brand">从想法到 0-1 产品闭环落地</span></div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">Agent 工程</div>
+    <div class="skill-body">熟悉 <span class="em-brand">ETCLOVG 七层架构</span>、沙箱/MCP、上下文压缩、Session Forking 与类 Jev 耗时预估组件</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">多模态 / RAG</div>
+    <div class="skill-body">深耕 VLM 视觉-语言对齐、<span class="em-brand">跨模态检索</span>与扩散模型视角增强</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">评测与验证</div>
+    <div class="skill-body">擅长反事实公平性审计、回归测试与失败归因，完成 <span class="em-brand">85,470 次</span>多模型方言偏见评测</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">推荐与视觉</div>
+    <div class="skill-body">具备 <span class="em-brand">10 万+ 房源</span>召回-排序与灰度迭代闭环，及房屋 2D-to-3D 几何重建落地经验</div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">个人特质</div>
+  <div class="convictions">
+    <div class="conv-card">
+      <div class="conv-head">黑盒拆解闭环</div>
+      <div class="conv-body">
+        保持旺盛好奇心，把未知黑盒摸透并点亮闭环，开源 <span class="hl">7 层 28 单元</span>重建理解。
+      </div>
+    </div>
+    <div class="conv-card">
+      <div class="conv-head">All-in-AI Builder</div>
+      <div class="conv-body">
+        以“定义问题、统筹全局”为内核，打破技术边界，用 AI 工具链加速 <span class="hl">0 到 1</span> 落地。
+      </div>
+    </div>
+    <div class="conv-card">
+      <div class="conv-head">跨领域快速交付</div>
+      <div class="conv-body">
+        从电子科学到计算机，从视觉检索到 Agent 基建，快速拆解痛点并端到端交付。
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="no-break">
+  <div class="section-title">教育背景</div>
+  <div class="edu-row">
+    <div>
+      <span class="school serif">广西师范大学</span>
+      <span class="major">　· 教育学部 · 教育技术学 · 师资博士后</span>
+    </div>
+    <div class="date">2026.01 - 2026.09</div>
+  </div>
+  <div class="edu-row">
+    <div>
+      <span class="school serif">广西师范大学</span>
+      <span class="major">　· 计算机科学与工程学院 · 软件工程 · 博士</span>
+    </div>
+    <div class="date">2021.09 - 2025.12</div>
+  </div>
+  <div class="edu-row">
+    <div>
+      <span class="school serif">广西师范大学</span>
+      <span class="major">　· 计算机科学与工程学院 · 软件工程 · 硕士</span>
+    </div>
+    <div class="date">2017.09 - 2020.06</div>
+  </div>
+  <div class="edu-row">
+    <div>
+      <span class="school serif">运城学院</span>
+      <span class="major">　· 物理与电子工程系 · 电子科学与技术 · 学士</span>
+    </div>
+    <div class="date">2012.09 - 2016.06</div>
+  </div>
+</section>
+
+</body>
+</html>
