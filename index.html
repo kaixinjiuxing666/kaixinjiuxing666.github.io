@@ -100,7 +100,15 @@
   }
   .header { padding-right: 22.2mm; }
   .metrics { padding-right: 22.2mm; }
-  a.metric--end { align-items: flex-end; text-align: right; }
+  /* 第四指标整块贴右（与职位行右对齐），块内两行仍左对齐 */
+  a.metric--end { align-items: flex-end; }
+  a.metric--end .metric-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4mm;
+    text-align: left;
+  }
 
   /* HEADER */
   .header {
@@ -410,7 +418,7 @@
   <div class="metric"><span class="metric-value serif">9<span class="unit">年</span></span><span class="metric-label">AI 算法研究与工程实践</span></div>
   <div class="metric"><span class="metric-value serif">10<span class="unit">万+</span></span><span class="metric-label">房源智能推荐规模落地</span></div>
   <a class="metric" href="https://scholar.google.com/citations?hl=en&amp;user=B7Wsoq0AAAAJ" title="Google Scholar 个人主页"><span class="metric-value serif">10<span class="unit">篇</span></span><span class="metric-label">学术论文</span></a>
-  <a class="metric metric--end" href="https://github.com/kaixinjiuxing666/pure-harness" title="pure-harness 开源项目"><span class="metric-value serif">28<span class="unit">个</span></span><span class="metric-label">Agent Harness 开源单元</span></a>
+  <a class="metric metric--end" href="https://github.com/kaixinjiuxing666/pure-harness" title="pure-harness 开源项目"><span class="metric-inner"><span class="metric-value serif">28<span class="unit">个</span></span><span class="metric-label">Agent Harness 开源单元</span></span></a>
 </div>
 
 <section>
