@@ -355,6 +355,14 @@
   .conv-body .hl,
   .skill-body .em-brand { color: inherit; }
   .proj-role { background: transparent; }
+
+  /* 手机号：网页端打码，PDF（打印）输出完整号码 */
+  .phone-mask { display: inline; }
+  .phone-full { display: none; }
+  @media print {
+    .phone-mask { display: none; }
+    .phone-full { display: inline; }
+  }
 </style>
 </head>
 <body>
@@ -368,7 +376,7 @@
     <br>
     <a href="https://github.com/kaixinjiuxing666">GitHub @kaixinjiuxing666</a>
     <span class="sep">·</span>
-    <span>18593273589</span>
+    <span class="phone"><span class="phone-full">18593273589</span><span class="phone-mask">185****3589</span></span>
     <span class="sep">·</span>
     <span>xsheng3589@gmail.com</span>
   </div>
