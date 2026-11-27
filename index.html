@@ -107,6 +107,8 @@
     white-space: nowrap;
   }
   .alias {
+    /* 拼音声调符号 è 本地字体子集缺失，统一用宋体拉丁字形，避免混排 */
+    font-family: "Songti SC", "Source Han Serif SC", "Noto Serif SC", Georgia, serif;
     font-size: 11pt;
     font-weight: 400;
     color: var(--stone);
@@ -369,7 +371,7 @@
 
 <div class="header">
   <div>
-    <div class="name serif">解盛<span class="alias">Xie Sheng</span></div>
+    <div class="name serif">解盛<span class="alias">Xiè Shèng</span></div>
   </div>
   <div class="contact">
     <span class="role">AI/DL/Agent 算法与开发</span>
