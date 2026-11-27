@@ -46,6 +46,7 @@
     --stone:     #6b6a64;
     --brand:     #1B365D;
     --brand-tint: #EEF2F7;
+    --link:      #14508C;
     --serif: "TsangerJinKai02", "Source Han Serif SC", "Source Han Serif CN", "Noto Serif CJK SC", "Noto Serif SC", "Songti SC", "STSong", "SimSun", Georgia, serif;
     --sans: var(--serif);
   }
@@ -71,6 +72,16 @@
   }
 
   a { color: var(--brand); text-decoration: none; }
+
+  /* 参考文献式深蓝超链接：论文 PDF / Google Scholar / 开源项目 */
+  a.ref { color: var(--link); }
+  a.ref:hover { text-decoration: underline; }
+  a.metric { color: var(--link); }
+  a.metric .metric-value,
+  a.metric .metric-value .unit,
+  a.metric .metric-label { color: var(--link); }
+  .contact a[href] { color: var(--link); }
+  .proj-name a { color: var(--link); }
 
   /* HEADER */
   .header {
@@ -331,6 +342,19 @@
     .section-title { font-size: 12pt; margin: 4mm 0 1.5mm; }
     .name { font-size: 24pt; }
   }
+
+  /* 仅小标题与超链接保留强调色，其余正文回归默认色 */
+  .contact .role { color: var(--near-black); }
+  .metric-value,
+  .metric-value .unit,
+  .proj-role,
+  .proj-label,
+  .skill-label,
+  .summary .hl,
+  .proj-text .hl,
+  .conv-body .hl,
+  .skill-body .em-brand { color: inherit; }
+  .proj-role { background: transparent; }
 </style>
 </head>
 <body>
@@ -344,17 +368,17 @@
     <br>
     <a href="https://github.com/kaixinjiuxing666">GitHub @kaixinjiuxing666</a>
     <span class="sep">·</span>
-    <a>185****3589</a>
+    <span>185****3589</span>
     <span class="sep">·</span>
-    <a href="mailto:xsheng3589@gmail.com">xsheng3589@gmail.com</a>
+    <span>xsheng3589@gmail.com</span>
   </div>
 </div>
 
 <div class="metrics">
   <div class="metric"><span class="metric-value serif">9<span class="unit">年</span></span><span class="metric-label">AI 算法研究与工程实践</span></div>
   <div class="metric"><span class="metric-value serif">10<span class="unit">万+</span></span><span class="metric-label">房源智能推荐规模落地</span></div>
-  <div class="metric"><span class="metric-value serif">10<span class="unit">篇</span></span><span class="metric-label">学术论文</span></div>
-  <div class="metric"><span class="metric-value serif">28<span class="unit">个</span></span><span class="metric-label">Agent Harness 开源单元</span></div>
+  <a class="metric" href="https://scholar.google.com/citations?hl=en&amp;user=B7Wsoq0AAAAJ" title="Google Scholar 个人主页"><span class="metric-value serif">10<span class="unit">篇</span></span><span class="metric-label">学术论文</span></a>
+  <a class="metric" href="https://github.com/kaixinjiuxing666/pure-harness" title="pure-harness 开源项目"><span class="metric-value serif">28<span class="unit">个</span></span><span class="metric-label">Agent Harness 开源单元</span></a>
 </div>
 
 <section>
@@ -369,8 +393,8 @@
 
   <div class="project">
     <div class="proj-head">
-      <span class="proj-name serif">中文多方言大模型偏见评测</span>
-      <span class="proj-kind">· The Unstandardized Penalty</span>
+      <span class="proj-name serif"><a class="ref" href="https://kaixinjiuxing666.github.io/papers/unstandardized-penalty-dialect-bias.pdf" title="The Unstandardized Penalty: Auditing Written Dialect Bias in Frontier LLM Gatekeepers">中文多方言大模型偏见评测</a></span>
+      <span class="proj-kind">· <a class="ref" href="https://kaixinjiuxing666.github.io/papers/unstandardized-penalty-dialect-bias.pdf" title="The Unstandardized Penalty: Auditing Written Dialect Bias in Frontier LLM Gatekeepers">The Unstandardized Penalty</a></span>
       <span class="proj-role">第一作者</span>
     </div>
     <div class="proj-lines">
@@ -460,10 +484,10 @@
 </section>
 
 <section>
-  <div class="section-title">科研成果<span class="sub">论文 10 篇（SCI 一区 7 篇 · CCF-A 1 篇 · 一作 4 篇）· 授权专利 2 项</span></div>
+  <div class="section-title"><a class="ref" href="https://scholar.google.com/citations?hl=en&amp;user=B7Wsoq0AAAAJ" title="Google Scholar 个人主页">科研成果</a><span class="sub"><a class="ref" href="https://scholar.google.com/citations?hl=en&amp;user=B7Wsoq0AAAAJ" title="Google Scholar 个人主页">论文 10 篇（SCI 一区 7 篇 · CCF-A 1 篇 · 一作 4 篇）</a> · 授权专利 2 项</span></div>
   <div class="skill-row">
     <div class="skill-label">一作顶刊</div>
-    <div class="skill-body">EAAI 2025、ESWA 2024（<span class="em-brand">SCI 一区</span>，CLIP跨模态检索/扩散模型人物一致性增强）；ICTAI 2019 会议（CNN稀疏注意力）</div>
+    <div class="skill-body"><a class="ref" href="https://kaixinjiuxing666.github.io/papers/eaai-2025-multi-scale-feature-refinement.pdf" title="Multi-scale Feature Refinement via Perspective Scaling and Adaptive Regularization for text-based person search (EAAI 2025)">EAAI 2025</a>、<a class="ref" href="https://kaixinjiuxing666.github.io/papers/eswa-2024-full-view-salient-feature.pdf" title="Full-view salient feature mining and alignment for text-based person search (ESWA 2024)">ESWA 2024</a>（<span class="em-brand">SCI 一区</span>，<a class="ref" href="https://kaixinjiuxing666.github.io/papers/eaai-2025-multi-scale-feature-refinement.pdf" title="Multi-scale Feature Refinement via Perspective Scaling and Adaptive Regularization for text-based person search (EAAI 2025)">CLIP跨模态检索</a>/<a class="ref" href="https://kaixinjiuxing666.github.io/papers/eswa-2024-full-view-salient-feature.pdf" title="Full-view salient feature mining and alignment for text-based person search (ESWA 2024)">扩散模型人物一致性增强</a>）；<a class="ref" href="https://kaixinjiuxing666.github.io/papers/ictai-2019-sparse-high-level-attention.pdf" title="Sparse High-Level Attention Networks for Person Re-Identification (ICTAI 2019)">ICTAI 2019 会议（CNN稀疏注意力）</a></div>
   </div>
   <div class="skill-row">
     <div class="skill-label">指导顶会刊</div>
